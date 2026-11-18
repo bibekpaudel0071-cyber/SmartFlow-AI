@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartFlow AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SMARTFLOW AI</h1>
+    <p>Intelligent Traffic Management System</p>
+  </header>
+
+  <main>
+    <section class="dashboard">
+      <h2>Traffic Simulation</h2>
+
+      <div class="signal-info">
+        <span id="nsSignal">North–South: RED</span>
+        <span id="ewSignal">East–West: GREEN</span>
+      </div>
+
+      <div class="intersection" id="intersection">
+        <div class="road vertical"></div>
+        <div class="road horizontal"></div>
+
+        <div class="lane-line vertical-line"></div>
+        <div class="lane-line horizontal-line"></div>
+
+        <div class="stop-line stop-n"></div>
+        <div class="stop-line stop-s"></div>
+        <div class="stop-line stop-e"></div>
+        <div class="stop-line stop-w"></div>
+
+        <div class="traffic-light light-ns" id="lightNS">
+          <span class="lamp red"></span>
+          <span class="lamp yellow"></span>
+          <span class="lamp green"></span>
+        </div>
+
+        <div class="traffic-light light-ew" id="lightEW">
+          <span class="lamp red"></span>
+          <span class="lamp yellow"></span>
+          <span class="lamp green"></span>
+        </div>
+
+        <div class="center-label">SMART<br>JUNCTION</div>
+        <div id="cars"></div>
+        </div>
+        <section class="analytics">
+  <h2>Live Traffic Analytics</h2>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span>Total Vehicles</span>
+      <strong id="totalVehicles">0</strong>
+    </div>
+
+    <div class="stat-card">
+      <span>Vehicles Served</span>
+      <strong id="vehiclesServed">0</strong>
+    </div>
+
+    <div class="stat-card">
+      <span>Traffic Status</span>
+      <strong id="trafficStatus">Low</strong>
+    </div>
+  </div>
+
+  <h3>Road-wise Traffic Density</h3>
+
+  <div class="road-stat">
+    <span>North</span>
+    <div class="bar-bg"><div id="barN" class="bar"></div></div>
+    <strong id="countN">0</strong>
+  </div>
+
+  <div class="road-stat">
+    <span>South</span>
+    <div class="bar-bg"><div id="barS" class="bar"></div></div>
+    <strong id="countS">0</strong>
+  </div>
+
+  <div class="road-stat">
+    <span>East</span>
+    <div class="bar-bg"><div id="barE" class="bar"></div></div>
+    <strong id="countE">0</strong>
+  </div>
+
+  <div class="road-stat">
+    <span>West</span>
+    <div class="bar-bg"><div id="barW" class="bar"></div></div>
+    <strong id="countW">0</strong>
+  </div>
+</section>
+
+<section class="ai-panel">
+  <h2>AI Decision Center</h2>
+
+  <div class="ai-priority-card">
+    <span>Current AI Priority</span>
+    <strong id="aiPriorityDisplay">Waiting for AI...</strong>
+    <p id="aiReason">Start the simulation to receive an AI decision.</p>
+  </div>
+
+  <div class="ai-details">
+    <div class="ai-detail-card">
+      <span>North–South Vehicles</span>
+      <strong id="aiNSCount">0</strong>
+      <small>Waiting: <span id="aiNSWait">0.0</span> sec</small>
+    </div>
+
+    <div class="ai-detail-card">
+      <span>East–West Vehicles</span>
+      <strong id="aiEWCount">0</strong>
+      <small>Waiting: <span id="aiEWWait">0.0</span> sec</small>
+    </div>
+  </div>
+
+  <p id="aiUpdated">AI decision: Not started</p>
+</section>
+
+    
+
+      <div class="controls">
+        <button onclick="startTraffic()">Start</button>
+        <button onclick="pauseTraffic()">Pause</button>
+        <button onclick="resetTraffic()">Reset</button>
+        <button onclick="addTraffic()">Add Traffic</button>
+      </div>
+
+      <p id="status">System ready</p>
+      <p class="note">Simulation demo – not connected to real traffic signals.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

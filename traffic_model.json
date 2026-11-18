@@ -1,0 +1,298 @@
+{
+  "feature_names": [
+    "north",
+    "south",
+    "east",
+    "west",
+    "wait_ns",
+    "wait_ew"
+  ],
+  "classes": [
+    "North-South",
+    "East-West"
+  ],
+  "accuracy": 0.808,
+  "tree": {
+    "type": "node",
+    "feature": 0,
+    "threshold": 13.5,
+    "left": {
+      "type": "node",
+      "feature": 3,
+      "threshold": 10.5,
+      "left": {
+        "type": "node",
+        "feature": 2,
+        "threshold": 8.5,
+        "left": {
+          "type": "node",
+          "feature": 4,
+          "threshold": 17.5,
+          "left": {
+            "type": "node",
+            "feature": 1,
+            "threshold": 5.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 1
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 0
+            }
+          },
+          "right": {
+            "type": "node",
+            "feature": 5,
+            "threshold": 24.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 0
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 0
+            }
+          }
+        },
+        "right": {
+          "type": "node",
+          "feature": 1,
+          "threshold": 16.5,
+          "left": {
+            "type": "node",
+            "feature": 5,
+            "threshold": 23.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 1
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 1
+            }
+          },
+          "right": {
+            "type": "node",
+            "feature": 5,
+            "threshold": 43.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 0
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 1
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "node",
+        "feature": 2,
+        "threshold": 6.5,
+        "left": {
+          "type": "node",
+          "feature": 1,
+          "threshold": 7.5,
+          "left": {
+            "type": "node",
+            "feature": 5,
+            "threshold": 20.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 1
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 1
+            }
+          },
+          "right": {
+            "type": "node",
+            "feature": 4,
+            "threshold": 17.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 1
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 0
+            }
+          }
+        },
+        "right": {
+          "type": "node",
+          "feature": 1,
+          "threshold": 18.5,
+          "left": {
+            "type": "node",
+            "feature": 4,
+            "threshold": 41.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 1
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 1
+            }
+          },
+          "right": {
+            "type": "node",
+            "feature": 4,
+            "threshold": 38.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 1
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 0
+            }
+          }
+        }
+      }
+    },
+    "right": {
+      "type": "node",
+      "feature": 3,
+      "threshold": 14.5,
+      "left": {
+        "type": "node",
+        "feature": 1,
+        "threshold": 7.5,
+        "left": {
+          "type": "node",
+          "feature": 2,
+          "threshold": 13.5,
+          "left": {
+            "type": "node",
+            "feature": 4,
+            "threshold": 18.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 0
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 0
+            }
+          },
+          "right": {
+            "type": "node",
+            "feature": 3,
+            "threshold": 2.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 0
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 1
+            }
+          }
+        },
+        "right": {
+          "type": "node",
+          "feature": 4,
+          "threshold": 5.5,
+          "left": {
+            "type": "node",
+            "feature": 5,
+            "threshold": 39.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 0
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 1
+            }
+          },
+          "right": {
+            "type": "node",
+            "feature": 5,
+            "threshold": 43.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 0
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "node",
+        "feature": 1,
+        "threshold": 11.5,
+        "left": {
+          "type": "node",
+          "feature": 2,
+          "threshold": 9.5,
+          "left": {
+            "type": "node",
+            "feature": 4,
+            "threshold": 20.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 1
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 0
+            }
+          },
+          "right": {
+            "type": "node",
+            "feature": 2,
+            "threshold": 13.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 1
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 1
+            }
+          }
+        },
+        "right": {
+          "type": "node",
+          "feature": 4,
+          "threshold": 27.5,
+          "left": {
+            "type": "node",
+            "feature": 2,
+            "threshold": 16.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 0
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 1
+            }
+          },
+          "right": {
+            "type": "node",
+            "feature": 2,
+            "threshold": 15.5,
+            "left": {
+              "type": "leaf",
+              "prediction": 0
+            },
+            "right": {
+              "type": "leaf",
+              "prediction": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
